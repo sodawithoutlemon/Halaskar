@@ -213,3 +213,81 @@ footer.about-us .logo img {
     margin-top: 100px;
     margin-bottom: 50px;
 }
+
+/*SPONSORS*/
+.sponsors {
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70vw;
+    margin-top: 0;
+}
+
+.sponsor-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sponsor-header .logo img {
+    width: 300px;
+    margin-right: 50px;
+}
+
+.sponsor-header .title{
+    background-color: #001f3be1;
+    color: white;
+    width: 30vw;
+    height: 6vw;
+    text-align: center;
+    padding-top: 3vw;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.sponsors .av-yusuf-demir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+.sponsors .av-yusuf-demir img{
+    width: 50%;
+    border-radius: 5px;
+}
+
+.sponsors .yesil-cizgi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+.sponsors .yesil-cizgi img{
+    width: 40%;
+    border-radius: 5px;
+}
+
+.sponsor-footer{
+    background-image: url("assets/img/upside.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+.sponsor-footer img{
+    width: 100px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
