@@ -1,3 +1,4 @@
+New! Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you first-letters navigation
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -56,6 +57,7 @@ html {
 body {
   background-color: var(--main-color);
   margin: 0; /* Sayfanın üst ve alt boşluklarını kaldırır */
+  height: 200vh;
 
 }
 
@@ -76,7 +78,7 @@ body {
   font-size: 1.6rem;/*16 pixel büyüklüğü*/
   padding: 0.5rem 1rem;
   display: inline-block;
-  margin: 0 7rem;/*sağdaki ve soldakinden 4.5rem uzaklaşsın*/
+  margin: 0 4rem;/*sağdaki ve soldakinden 4.5rem uzaklaşsın*/
   position: sticky;
   top: 0;
   border-bottom: 0.2rem solid transparent; 
@@ -85,7 +87,7 @@ body {
 .header .navbar .active,
 .header .navbar a:hover {
   border-color: var(--main-color);
-  padding-bottom: 0.5rem;   
+  padding-bottom: 0.5rem;
 }
 
 /*header end*/
@@ -93,13 +95,11 @@ body {
 /*home start*/
 
 .home{
-  height: 120vh;
-  
+  min-height: 100vh;
   background:url(../images/sky+drone+logo3.png) no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: white;
-  margin-top: -6rem;
+  margin-top: -8.6rem;
   display: flex;
   
 }
@@ -171,7 +171,7 @@ body {
 
 /* iha start */
 .iha{
-  min-height: 90vh;
+  min-height: 100vh;
   background:url(../images/drone.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -188,7 +188,7 @@ body {
   font-weight: 500; /* Normal kalınlık */
   letter-spacing: 0.1rem;
   color: #0a1f44;
-  top: 99rem;
+  top: 94rem;
   left: 40rem;
   position: absolute; /* Position özelliğini ayarlıyoruz */
 }
@@ -200,13 +200,12 @@ body {
   font-weight: 500;
   line-height: 1.8;
   padding: 1rem 0; /* Yazının etrafında boşluk bırakır */
-  top: 102rem;
+  top: 97rem;
   left: 15rem;
   position: absolute; /* Position özelliğini ayarlıyoruz */
 }
 
 .iha  .content .viha h3{
-  text-align: center;
   border-bottom: 0.3rem solid var(--main-color); /* Çizgi rengi ve kalınlığı */
   padding-bottom: 0.5rem; /* Çizgiyi aşağıya kaydırır */
   transform: translate(-50%, -50%);
@@ -214,8 +213,8 @@ body {
   font-weight: 500; /* Normal kalınlık */
   letter-spacing: 0.1rem;
   color: #0a1f44;
-  top: 99rem;
-  left: 100rem;
+  top: 94rem;
+  left: 107rem;
   position: absolute; /* Position özelliğini ayarlıyoruz */
 }
 
@@ -226,8 +225,8 @@ body {
   font-weight: 500;
   line-height: 1.8;
   padding: 1rem 0; /* Yazının etrafında boşluk bırakır */
-  top: 102rem;
-  left: 74rem;
+  top: 97rem;
+  left: 81rem;
   position: absolute; /* Position özelliğini ayarlıyoruz */
 }
 /* iha end */
