@@ -14,6 +14,7 @@ body {
     
 }
 
+<<<<<<< HEAD
 nav{
     margin-left: 0;
     height: 15vw;
@@ -35,6 +36,37 @@ nav ul li a {
     font-size: 17px;
     font-weight: 100;
 }
+=======
+.header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+  
+  .header .navbar a {
+    text-decoration: none;
+    color: #121212;
+    font-size: 1rem;/*16 pixel büyüklüğü*/
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin: 0 4rem;/*sağdaki ve soldakinden 4.5rem uzaklaşsın*/
+    position: sticky;
+    top: 0;
+    border-bottom: 0.2rem solid transparent; 
+  }
+  
+  .header .navbar .active,
+  .header .navbar a:hover {
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;   
+  }
+
+>>>>>>> 9528d37 (T)
 
 
 /*HAKKIMIZDA*/
