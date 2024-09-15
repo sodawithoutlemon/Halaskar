@@ -108,17 +108,17 @@ footer.about-us .logo img {
     width: 90vw;
 }
 
-.team-section .header{
+.ekip-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.team-section .header .logo img {
+.ekip-header .logo img {
     width: 300px;
 }
 
-.team-section .title{
+.ekip-header .title{
     background-color: #001f3be1;
     color: white;
     width: 30vw;
