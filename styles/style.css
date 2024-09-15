@@ -55,7 +55,7 @@ html {
 }
 
 body {
-  background-color: var(--main-color);
+  background-color: white;
   margin: 0; /* Sayfanın üst ve alt boşluklarını kaldırır */
   height: 200vh;
 
