@@ -95,7 +95,7 @@ body {
 /*home start*/
 
 .home{
-  min-height: 100vh;
+  min-height: 110vh;
   background:url(../images/sky+drone+logo3.png) no-repeat;
   background-size: cover;
   background-position: center;
