@@ -214,7 +214,7 @@ body {
   letter-spacing: 0.1rem;
   color: #0a1f44;
   top: 94rem;
-  left: 107rem;
+  right: 0rem;
   position: absolute; /* Position özelliğini ayarlıyoruz */
 }
 
@@ -226,7 +226,7 @@ body {
   line-height: 1.8;
   padding: 1rem 0; /* Yazının etrafında boşluk bırakır */
   top: 97rem;
-  left: 81rem;
+  right: 15rem;
   position: absolute; /* Position özelliğini ayarlıyoruz */
 }
 /* iha end */
