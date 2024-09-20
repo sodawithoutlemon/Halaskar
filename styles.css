@@ -25,7 +25,7 @@ body {
     z-index: 1000;
   }
   
-  .header .navbar a {
+.header .navbar a {
     text-decoration: none;
     color: #121212;
     font-size: 1rem;/*16 pixel büyüklüğü*/
@@ -35,15 +35,200 @@ body {
     position: sticky;
     top: 0;
     border-bottom: 0.2rem solid transparent; 
-  }
-  
-  .header .navbar .active,
-  .header .navbar a:hover {
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
     border-color: var(--main-color);
     padding-bottom: 0.5rem;   
-  }
+}
 
 
+/*INDEX*/
+
+.index-header .logo img {
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.misyon{
+    width: 27vw;
+    margin-left: 55vw;
+}
+
+.misyon .misyon-title{
+    text-align: center;
+    color:#001f3b;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.misyon .divider{
+    width: 200px;
+    height: 5px;
+    background-color: #001f3b;
+    margin: auto;
+    margin-top: 10px;
+    border: none;
+}
+
+.misyon .misyon-content{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.vizyon{
+    width: 27vw;
+    margin-left: 15vw;
+    margin-top: -5vw;
+}
+
+.vizyon .vizyon-title{
+    text-align: center;
+    color:#001f3b;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.vizyon .divider{
+    width: 200px;
+    height: 5px;
+    background-color: #001f3b;
+    margin: auto;
+    margin-top: 10px;
+    border: none;
+}
+
+.vizyon .vizyon-content{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.hedeflerimiz{
+    width:100vw;
+    margin-left: 0;
+    margin-top: 5vw;
+    
+}
+
+.hedeflerimiz .title{
+    background-color: #00274d;
+    height: 10vw;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.hedeflerimiz .title p{
+    padding-top: 3vw;
+}
+
+.hedeflerimiz .projects {
+    position: relative;
+    background-image: url("images/buyuk_drone.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    padding-bottom: 200px;
+}
+
+.hedeflerimiz .projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1;
+}
+
+.hedeflerimiz .projects .project{
+    width: 35vw;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.hedeflerimiz .projects .project .title{
+    text-align: center;
+    background-color: white;
+    height: fit-content;
+    color:#001f3b;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.hedeflerimiz .projects .project .divider{
+    width: 400px;
+    height: 5px;
+    background-color: #001f3b;
+    border: none;
+    margin-top: 0;
+}
+
+.hedeflerimiz .projects .project .content{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top:30px;
+    line-height: 1.5;
+}
+
+.index-footer{
+    background-image: url("assets/img/upside.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    padding-top: 100px;
+}
+
+.index-footer .contact{
+    margin-left: 100px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.index-footer h3 {
+    color: #333;
+}
+
+.index-footer .contact a {
+    color: black;
+    text-decoration: none;
+}
+
+.index-footer .contact a:hover{
+    color: #333;
+}
+
+.index-footer .contact .socials img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.index-footer .contact .socials img:hover{
+    transform: scale(1.2);
+}
+
+.index-footer .logo img {
+    width: 100px;
+    margin-right: 50px;
+}
 
 /*HAKKIMIZDA*/
 
