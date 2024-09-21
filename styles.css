@@ -11,27 +11,28 @@ body {
     background-image: url('assets/img/sky+drone.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    
+    height: fit-content;
 }
 
 .header {
     position: sticky;
     width: 100%;
     top: 0;
-    color: white;
-    background-color: transparent;
+    background-color: rgba(41, 26, 94, 0);
     text-align: center;
     padding: 1rem 0;
     z-index: 1000;
-  }
-  
+    backdrop-filter: blur(2px);
+    transition: background-color 0.5s ease;
+}
+
 .header .navbar a {
     text-decoration: none;
     color: #121212;
-    font-size: 1rem;/*16 pixel büyüklüğü*/
+    font-size: 1rem; /* 16 pixel büyüklüğü */
     padding: 0.5rem 1rem;
     display: inline-block;
-    margin: 0 4rem;/*sağdaki ve soldakinden 4.5rem uzaklaşsın*/
+    margin: 0 4rem; /* sağdaki ve soldakinden 4.5rem uzaklaşsın */
     position: sticky;
     top: 0;
     border-bottom: 0.2rem solid transparent; 
@@ -43,82 +44,41 @@ body {
     padding-bottom: 0.5rem;   
 }
 
+/* Responsive Navbar */
+@media (max-width: 768px) {
+
+    .header {
+        padding: 0.5rem 0; /* Küçük ekranlarda daha az padding */
+    }
+
+    .header .navbar a {
+        font-size: 0.9rem; /* Mobilde daha küçük font boyutu */
+        padding: 0.3rem 0.5rem; /* Daha az padding */
+        width: 30%; /* Buton genişliği */
+        margin: 2.5%; /* Butonlar arasındaki boşluk */
+        text-align: center; /* Metni ortalamak için */
+    }
+}
 
 /*INDEX*/
+.index-header {
+    text-align: center;
+    padding: 20px 0;
+}
 
 .index-header .logo img {
-    width: 400px;
-    margin-left: 100px;
-    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-.misyon{
-    width: 27vw;
-    margin-left: 55vw;
+
+.vizmis {
+    width: 100vw;
+    margin-left: 0;    
 }
 
-.misyon .misyon-title{
-    text-align: center;
-    color:#001f3b;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-.misyon .divider{
-    width: 200px;
-    height: 5px;
-    background-color: #001f3b;
-    margin: auto;
-    margin-top: 10px;
-    border: none;
-}
-
-.misyon .misyon-content{
-    text-align: center;
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
-.vizyon{
-    width: 27vw;
-    margin-left: 15vw;
-    margin-top: -5vw;
-}
-
-.vizyon .vizyon-title{
-    text-align: center;
-    color:#001f3b;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-.vizyon .divider{
-    width: 200px;
-    height: 5px;
-    background-color: #001f3b;
-    margin: auto;
-    margin-top: 10px;
-    border: none;
-}
-
-.vizyon .vizyon-content{
-    text-align: center;
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
-.hedeflerimiz{
-    width:100vw;
-    margin-left: 0;
-    margin-top: 5vw;
-    
-}
-
-.hedeflerimiz .title{
+.vizmis .title {
     background-color: #00274d;
     height: 10vw;
     color: white;
@@ -127,8 +87,68 @@ body {
     font-size: 30px;
 }
 
-.hedeflerimiz .title p{
-    padding-top: 3vw;
+.vizmis .projects {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 1; /* As z-index is greater value it will appear top */
+    padding-bottom: 50px;
+}
+
+.vizmis .projects .project {
+    width: 35vw;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Responsive for vizmis */
+@media (max-width: 768px) {
+    .vizmis .projects .project {
+        width: 80vw;
+    }
+}
+
+.vizmis .projects .project .title {
+    text-align: center;
+    background-color: white;
+    height: fit-content;
+    color: #001f3b;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.vizmis .projects .project .divider {
+    width: 100%;
+    max-width: 400px;
+    height: 5px;
+    background-color: #001f3b;
+    border: none;
+    margin: 0 auto;
+}
+
+.vizmis .projects .project .content {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+.hedeflerimiz {
+    width: 100vw;
+    margin-left: 0;
+    margin-top: 5vw;
+}
+
+.hedeflerimiz .title {
+    background-color: #00274d;
+    height: 10vw;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .hedeflerimiz .projects {
@@ -138,8 +158,11 @@ body {
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     z-index: 1;
     padding-bottom: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .hedeflerimiz .projects::before {
@@ -153,55 +176,63 @@ body {
     z-index: -1;
 }
 
-.hedeflerimiz .projects .project{
+.hedeflerimiz .projects .project {
     width: 35vw;
     line-height: 1.5;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-.hedeflerimiz .projects .project .title{
+/* Responsive for hedeflerimiz */
+@media (max-width: 768px) {
+    .hedeflerimiz .projects .project {
+        width: 80vw;
+    }
+}
+
+.hedeflerimiz .projects .project .title {
     text-align: center;
     background-color: white;
     height: fit-content;
-    color:#001f3b;
+    color: #001f3b;
     font-weight: 400;
     margin-bottom: 0;
 }
 
-.hedeflerimiz .projects .project .divider{
-    width: 400px;
+.hedeflerimiz .projects .project .divider {
+    width: 100%;
+    max-width: 400px;
     height: 5px;
     background-color: #001f3b;
     border: none;
-    margin-top: 0;
+    margin: 0 auto;
 }
 
-.hedeflerimiz .projects .project .content{
+.hedeflerimiz .projects .project .content {
     text-align: center;
     font-size: 16px;
     font-weight: 300;
-    margin-top:30px;
+    margin-top: 30px;
     line-height: 1.5;
 }
 
-.index-footer{
+.index-footer {
     background-image: url("assets/img/upside.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     font-size: 25px;
     padding-top: 100px;
 }
 
-.index-footer .contact{
-    margin-left: 100px;
-    font-size: 15px;
+.index-footer .contact {
     text-align: center;
+    font-size: 15px;
     margin-bottom: 50px;
 }
-
 
 .index-footer h3 {
     color: #333;
@@ -212,7 +243,7 @@ body {
     text-decoration: none;
 }
 
-.index-footer .contact a:hover{
+.index-footer .contact a:hover {
     color: #333;
 }
 
@@ -221,18 +252,30 @@ body {
     margin: 0 10px;
 }
 
-.index-footer .contact .socials img:hover{
+.index-footer .contact .socials img:hover {
     transform: scale(1.2);
 }
 
 .index-footer .logo img {
     width: 100px;
-    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+/* Responsive for index footer */
+@media (max-width: 768px) {
+    .index-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .index-footer .contact {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
 }
 
 /*HAKKIMIZDA*/
 
-.about-us .title{
+.about-us .title {
     background-color: #001f3be1;
     color: white;
     width: 30vw;
@@ -245,7 +288,7 @@ body {
     font-size: 30px;
 }
 
-.about-us .content{
+.about-us .content {
     margin: auto;
     width: 67vw;
     margin-top: 5vw;
@@ -254,11 +297,13 @@ body {
     line-height: 1.5;
 }
 
-footer.about-us{
+footer.about-us {
     margin-top: 10vw;
     padding: 30px 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer.about-us h3 {
@@ -275,7 +320,7 @@ footer.about-us .contact a {
     text-decoration: none;
 }
 
-footer.about-us .contact a:hover{
+footer.about-us .contact a:hover {
     color: #333;
 }
 
@@ -284,12 +329,12 @@ footer.about-us .socials img {
     margin: 0 10px;
 }
 
-footer.about-us .socials img:hover{
+footer.about-us .socials img:hover {
     transform: scale(1.2);
 }
 
 footer.about-us .logo img {
-    width: 300px;
+    width: 150px;
     margin-top: -100px;
 }
 
@@ -301,17 +346,18 @@ footer.about-us .logo img {
     width: 90vw;
 }
 
-.ekip-header{
+.ekip-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .ekip-header .logo img {
-    width: 300px;
+    width: 200px;
 }
 
-.ekip-header .title{
+.ekip-header .title {
     background-color: #001f3be1;
     color: white;
     width: 30vw;
@@ -322,6 +368,16 @@ footer.about-us .logo img {
     border-bottom-right-radius: 30px;
     font-weight: 200;
     font-size: 30px;
+}
+
+/* Responsive for ekip-header */
+@media (max-width: 768px) {
+    .ekip-header {
+        flex-direction: column;
+    }
+    .ekip-header .title {
+        width: 80%;
+    }
 }
 
 .team-section h2 {
@@ -336,13 +392,7 @@ footer.about-us .logo img {
     justify-content: space-between;
     align-items: center;
     margin-top: 100px;
-}
-
-.team-group.last {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
+    flex-wrap: wrap;
 }
 
 .team-description {
@@ -391,20 +441,28 @@ footer.about-us .logo img {
     color: #001f3b;
 }
 
-.ekip-footer{
+/* Responsive for team-section */
+@media (max-width: 768px) {
+    .team-description {
+        width: 100%;
+    }
+    .team-group ul {
+        width: 100%;
+    }
+}
+
+.ekip-footer {
     background-image: url("assets/img/upside.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -100px;
     display: flex;
     justify-content: end;
+    padding: 50px 0;
 }
 
-.ekip-footer img{
+.ekip-footer img {
     width: 100px;
     margin-right: 50px;
-    margin-top: 100px;
-    margin-bottom: 50px;
 }
 
 /*SPONSORS*/
@@ -416,18 +474,18 @@ footer.about-us .logo img {
     margin-top: 0;
 }
 
-.sponsor-header{
+.sponsor-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .sponsor-header .logo img {
-    width: 300px;
-    margin-right: 50px;
+    width: 200px;
 }
 
-.sponsor-header .title{
+.sponsor-header .title {
     background-color: #001f3be1;
     color: white;
     width: 30vw;
@@ -440,7 +498,17 @@ footer.about-us .logo img {
     font-size: 30px;
 }
 
-.sponsors .av-yusuf-demir{
+/* Responsive for sponsor-header */
+@media (max-width: 768px) {
+    .sponsor-header {
+        flex-direction: column;
+    }
+    .sponsor-header .title {
+        width: 80%;
+    }
+}
+
+.sponsors .av-yusuf-demir {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -449,12 +517,12 @@ footer.about-us .logo img {
     font-weight: bold;
 }
 
-.sponsors .av-yusuf-demir img{
+.sponsors .av-yusuf-demir img {
     width: 50%;
     border-radius: 5px;
 }
 
-.sponsors .yesil-cizgi{
+.sponsors .yesil-cizgi {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -463,12 +531,32 @@ footer.about-us .logo img {
     font-weight: bold;
 }
 
-.sponsors .yesil-cizgi img{
+.sponsors .yesil-cizgi img {
     width: 40%;
     border-radius: 5px;
 }
 
-.sponsor-footer{
+/* Responsive for sponsors */
+@media (max-width: 768px) {
+    .sponsors .av-yusuf-demir img,
+    .sponsors .yesil-cizgi img {
+        width: 90%;
+    }
+}
+
+.mak {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.sponsor-footer {
     background-image: url("assets/img/upside.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -478,7 +566,7 @@ footer.about-us .logo img {
     margin-top: 100px;
 }
 
-.sponsor-footer img{
+.sponsor-footer img {
     width: 100px;
     margin-right: 50px;
     margin-top: 100px;
