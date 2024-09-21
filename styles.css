@@ -60,9 +60,9 @@ body {
     }
 }
 
-/*INDEX*/
+
 .index-header {
-    text-align: center;
+    margin-left: 100px;
     padding: 20px 0;
 }
 
@@ -71,6 +71,8 @@ body {
     max-width: 400px;
     margin: 0 auto;
 }
+/*INDEX*/
+
 
 
 .vizmis {
@@ -105,6 +107,17 @@ body {
 
 /* Responsive for vizmis */
 @media (max-width: 768px) {
+    .index-header {
+        margin-left: 0px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .index-header .logo img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
     .vizmis .projects .project {
         width: 80vw;
     }
@@ -160,6 +173,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     z-index: 1;
+    margin-top: 10vh;
     padding-bottom: 200px;
     padding-left: 10px;
     padding-right: 10px;
@@ -185,6 +199,11 @@ body {
 
 /* Responsive for hedeflerimiz */
 @media (max-width: 768px) {
+    .hedeflerimiz .projects {
+        background-size: contain; /* Mobilde arka planı içeriğe göre küçült */
+        background-position: center; /* Arka planın ortalanması */
+        padding-bottom: 100px; /* Alt padding'i de küçült */
+    }
     .hedeflerimiz .projects .project {
         width: 80vw;
     }
@@ -192,7 +211,7 @@ body {
 
 .hedeflerimiz .projects .project .title {
     text-align: center;
-    background-color: white;
+    background-color: transparent;
     height: fit-content;
     color: #001f3b;
     font-weight: 400;
@@ -221,7 +240,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
@@ -231,6 +249,7 @@ body {
 .index-footer .contact {
     text-align: center;
     font-size: 15px;
+    margin-left: 20px;
     margin-bottom: 50px;
 }
 
@@ -269,23 +288,45 @@ body {
     }
     .index-footer .contact {
         font-size: 14px;
+        margin-left: 0px;
         margin-bottom: 20px;
     }
 }
 
 /*HAKKIMIZDA*/
+@media (max-width: 768px) {
+    .about-us .title {
+        width: 60vw !important;
+        height: 10vh !important;
+        margin-top: 5vh !important;
+        margin-bottom: 8vh !important;
+    }
+    .about-us .content {
+        font-size: 12px !important;
+    }
+
+}
+
+
+
 
 .about-us .title {
     background-color: #001f3be1;
     color: white;
     width: 30vw;
-    height: 6vw;
+    height: 15vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     text-align: center;
-    padding-top: 3vw;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+     align-items: center;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+}
+h5{
     font-weight: 200;
-    font-size: 30px;
+    font-size: 4vh;
 }
 
 .about-us .content {
@@ -303,7 +344,6 @@ footer.about-us {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 footer.about-us h3 {
@@ -348,37 +388,40 @@ footer.about-us .logo img {
 
 .ekip-header {
     display: flex;
+    margin-top: 5vh;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 .ekip-header .logo img {
-    width: 200px;
-}
+    margin-right: 15px;
+    width: 25vw;}
 
 .ekip-header .title {
     background-color: #001f3be1;
     color: white;
     width: 30vw;
-    height: 6vw;
+    height: 15vh;
     text-align: center;
-    padding-top: 3vw;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    font-weight: 200;
-    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+@media (max-width: 768px) {
+    .ekip-header .title {
+        width: 60vw !important;
+        height: 10vh !important;
+
+    }
+    .h5c{
+        font-size: 2vh !important;
+    }
 }
 
-/* Responsive for ekip-header */
-@media (max-width: 768px) {
-    .ekip-header {
-        flex-direction: column;
-    }
-    .ekip-header .title {
-        width: 80%;
-    }
-}
 
 .team-section h2 {
     text-align: center;
@@ -446,6 +489,24 @@ footer.about-us .logo img {
     .team-description {
         width: 100%;
     }
+
+    .team-section{
+        width: 80vw;
+    }
+
+    .team-group h3 {
+        font-size: 1.2rem;
+
+    }
+    .team-group p {
+        font-size: 15px !important;
+    }
+
+
+    .team-group {
+        margin-top: 10px !important;
+    }
+
     .team-group ul {
         width: 100%;
     }
@@ -476,35 +537,43 @@ footer.about-us .logo img {
 
 .sponsor-header {
     display: flex;
+    margin-top: 5vh;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 .sponsor-header .logo img {
-    width: 200px;
+    margin-right: 10px;
+    width: 25vw;
 }
 
 .sponsor-header .title {
     background-color: #001f3be1;
     color: white;
     width: 30vw;
-    height: 6vw;
+    height: 15vh;
     text-align: center;
-    padding-top: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    font-weight: 200;
-    font-size: 30px;
 }
 
-/* Responsive for sponsor-header */
+h5{
+    font-weight: 200;
+    font-size: 4vh;
+}
+
 @media (max-width: 768px) {
-    .sponsor-header {
-        flex-direction: column;
-    }
     .sponsor-header .title {
-        width: 80%;
+        width: 60vw !important;
+        height: 10vh !important;
+
+    }
+    .h5c{
+        font-size: 2vh !important;
     }
 }
 
@@ -513,7 +582,7 @@ footer.about-us .logo img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 40px;
     font-weight: bold;
 }
 
@@ -545,6 +614,7 @@ footer.about-us .logo img {
 }
 
 .mak {
+    height: 15vh !important ;
     display: flex;
     justify-content: center; /* centers horizontally */
     align-items: center;
@@ -566,6 +636,20 @@ h4 {
     margin-top: 100px;
 }
 
+
+/* Responsive for sponsors */
+@media (max-width: 768px) {
+    .sponsors .av-yusuf-demir img,
+    .sponsors .yesil-cizgi img {
+        width: 90%;
+    }
+    .kendi{
+        font-size: 10px !important;
+    }
+}
+.kendi{
+    font-size: 25px;
+}
 .sponsor-footer img {
     width: 100px;
     margin-right: 50px;
