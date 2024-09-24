@@ -634,7 +634,7 @@ h5{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 40px;
     font-weight: bold;
 }
 
@@ -675,7 +675,8 @@ h5{
     .sponsors .av-yusuf-demir img,
     .sponsors .yesil-cizgi img,
     .sponsors .aselsan img,
-    .sponsors .rftr img {
+    .sponsors .rftr img,
+    .sponsors .dasal img{
         width: 90%;
     }
 }
