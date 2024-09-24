@@ -545,13 +545,7 @@ footer.about-us .logo img {
 }
 
 /*SPONSORS*/
-.sponsors {
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 70vw;
-    margin-top: 0;
-}
+
 
 .sponsor-header {
     display: flex;
@@ -595,6 +589,18 @@ h5{
     }
 }
 
+
+.sp{
+    border: 8px solid black;
+}
+
+
+.sponsors {
+    margin: auto;
+    width: 70vw;
+    margin-top: 0px;
+}
+
 .sponsors .av-yusuf-demir {
     display: flex;
     flex-direction: column;
@@ -619,9 +625,24 @@ h5{
 }
 
 .sponsors .yesil-cizgi img {
-    width: 40%;
+    width: 50%;
     border-radius: 5px;
 }
+
+.sponsors .dasal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+.sponsors .dasal img{
+    width: 50%;
+    border-radius: 5px;
+}
+
 
 .sponsors .aselsan {
     display: flex;
@@ -632,7 +653,7 @@ h5{
     font-weight: bold;
 }
 .sponsors .aselsan img{
-    width: 40%;
+    width: 50%;
     border-radius: 5px;
 }
 
@@ -645,7 +666,7 @@ h5{
     font-weight: bold;
 }
 .sponsors .rftr img{
-    width: 40%;
+    width: 50%;
     border-radius: 5px;
 }
 
