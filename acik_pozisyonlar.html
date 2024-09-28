@@ -65,6 +65,50 @@
 
         </div>
     </section>
+
+    <form class="contact-us-form" method="post" action="contact.php">
+      <div class="name-div">
+          <p><label>İsim</label>
+          <input name="first_name" type="text" required /></p>
+
+          <p><label>Soyisim</label>
+          <input name="last_name" type="text" required/></p>
+      </div>
+
+      <div>
+          <label>Email</label>
+          <input name="email" type="email" required />
+      </div>
+
+      <div>
+          <label>Ekip</label>
+          <select name="department" required>
+              <option value="" disabled selected>- Select -</option>
+              <option value="Aviyonik">Aviyonik</option>
+              <option value="Hava Aracı Tasarım">Hava Aracı Tasarım</option>
+              <option value="Yazılım">Yazılım</option>
+          </select>
+      </div>
+
+      <div>
+          <label>Konu</label>
+          <input name="subject" type="text" required />
+      </div>
+
+      <div>
+          <label>Mesaj</label>
+          <textarea name="message" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">Gönder</button>
+  </form>
+
+
+  <?php if (!empty($message)): ?>
+      <p class="<?php echo strpos($message, 'successfully') !== false ? 'message' : 'error'; ?>">
+          <?php echo $message; ?>
+      </p>
+  <?php endif; ?>
     
     <footer class="positions-footer">
         <div class="contact">
