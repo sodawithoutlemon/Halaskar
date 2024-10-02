@@ -866,3 +866,49 @@ h5{
         margin-bottom: 20px;
     }
 }
+
+/*İLETİŞİM*/
+.contact-us-form {
+    width: 50vw;
+    margin-top: 5vh;
+    margin-left: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-form div {
+    margin-bottom: 1.5rem;
+}
+
+.name-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.name-div p {
+    flex: 1;
+}
+
+.contact-us-form input,
+.contact-us-form select,
+.contact-us-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label.required:after {
+    content: " *";
+    color: red;
+}
+
+.submit-button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
