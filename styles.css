@@ -424,7 +424,7 @@ footer.about-us .logo img {
     margin-right: 15px;
     width: 25vw;}
 
-.here{
+.here{ 
     margin-top: 5vh !important;
 }
 
@@ -1013,12 +1013,14 @@ h5{
     margin-right: 10px !important;
 }
 
+.xdddd{
+    margin-bottom: 5vh;
+}
+
 @media (max-width: 768px) {
-    .gallery-cell {
-       
-        
-    
-      }
+    .textp{
+        font-size: 2.6vw !important;
+    }
 
 }
 
@@ -1039,7 +1041,7 @@ h5{
   }
   
 .textp{
-    font-size: 2.5vw !important;
+    font-size: 1.5vw;
 }
   
   /* cell number */
