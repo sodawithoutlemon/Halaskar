@@ -912,3 +912,109 @@ label.required:after {
     border-radius: 4px;
     cursor: pointer;
 }
+/*Yol Haritamız*/
+.path .title {
+    background-color: #001f3be1;
+    color: white;
+    width: 30vw;
+    height: 15vh;
+    margin-top: 5vh;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+     align-items: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+h5{
+    font-weight: 200;
+    font-size: 4vh;
+}
+
+.path .content1 {
+    margin: auto;
+    width: 50vw;
+    margin-top: 5vw;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:#001f3b;
+    color: white;
+    
+}
+.path .content2 {
+    margin: auto;
+    width: 50vw;
+    margin-top: 1vw;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:#001f3b;
+    color: white;
+    
+}
+
+.path .arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.path .arrow-head {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid var(--arrow-color, #001f3b); /* Ok rengi ayarlanabilir */
+}
+
+.path .arrow-shaft {
+    width: 4px;
+    height: 100px;
+    background-color: var(--arrow-color, #001f3b); 
+}
+
+footer.path {
+    margin-top: 10vw;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer.path h3 {
+    color: #333;
+}
+
+footer.path .contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer.path .contact a {
+    color: black;
+    text-decoration: none;
+}
+
+footer.path .contact a:hover {
+    color: #333;
+}
+
+footer.path .socials img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer.path .socials img:hover {
+    transform: scale(1.2);
+}
+
+footer.path .logo img {
+    width: 150px;
+    margin-top: -100px;
+}
