@@ -1022,6 +1022,12 @@ h5{
         font-size: 2.6vw !important;
     }
 
+    .gallery-cell {
+
+        height: 30vw !important;
+        
+    
+      }
 }
 
   .gallery-cell {
@@ -1041,7 +1047,7 @@ h5{
   }
   
 .textp{
-    font-size: 1.4vw;
+    font-size: 1.5vw;
 }
   
   /* cell number */
