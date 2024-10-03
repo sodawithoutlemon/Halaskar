@@ -49,7 +49,7 @@ body {
     margin: 0 6rem; /* sağdaki ve soldakinden 4rem uzaklaşsın */
     position: sticky;
     top: 0;
-    width: 10%;
+    width: 15%;
     border-bottom: 0.2rem solid transparent; 
 }
 
